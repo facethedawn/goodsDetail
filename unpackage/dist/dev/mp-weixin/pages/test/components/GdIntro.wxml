@@ -1,0 +1,1 @@
+<view class="GdIntro data-v-a46e93ac"><view class="title data-v-a46e93ac">产品简介</view><view class="data-v-a46e93ac"><rich-text nodes="{{goodsDetail.goodsRemark}}"></rich-text></view></view>

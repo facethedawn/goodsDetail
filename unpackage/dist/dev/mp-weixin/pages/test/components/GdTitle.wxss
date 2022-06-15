@@ -1,0 +1,22 @@
+.GdTitle .title.data-v-0aecc7d4 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 1.6rem;
+  line-height: 1.6rem;
+}
+.GdTitle .title text.data-v-0aecc7d4 {
+  font-size: 1.6rem;
+}
+.GdTitle .title view.data-v-0aecc7d4 {
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: #ccc;
+}
+.GdTitle .subtitle.data-v-0aecc7d4 {
+  width: 100%;
+  text-align: justify;
+  text-align-last: justify;
+  font-size: 1.6rem;
+}
+

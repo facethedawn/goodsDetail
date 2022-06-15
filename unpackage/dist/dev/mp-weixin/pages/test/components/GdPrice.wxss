@@ -1,0 +1,11 @@
+.GdPrice .p1.data-v-09bb6af2 {
+  display: block;
+  color: red;
+  font-size: 19px;
+}
+.GdPrice .p2.data-v-09bb6af2 {
+  display: block;
+  text-decoration: line-through;
+  color: #ccc;
+}
+

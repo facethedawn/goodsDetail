@@ -1,0 +1,1 @@
+<block wx:if="{{goodsDetail.rsSkuDomainList}}"><view class="GdPrice data-v-09bb6af2"><text class="p1 data-v-09bb6af2">{{$root.g0}}</text><text class="p2 data-v-09bb6af2">{{$root.g1}}</text></view></block>

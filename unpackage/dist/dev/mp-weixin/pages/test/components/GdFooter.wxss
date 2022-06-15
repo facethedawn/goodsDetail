@@ -1,0 +1,65 @@
+.GdFooter.data-v-17a9d44d {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding: 0.5rem 0;
+  border-top: 1px solid #E0E0E0;
+}
+.GdFooter .wrap.data-v-17a9d44d {
+  display: flex;
+  justify-content: space-around;
+}
+.GdFooter .wrap .lPartWrap.data-v-17a9d44d {
+  width: 30%;
+  display: inline-block;
+}
+.GdFooter .wrap .lPartWrap .lPart.data-v-17a9d44d {
+  display: flex;
+  justify-content: space-around;
+}
+.GdFooter .wrap .lPartWrap .lPart text.data-v-17a9d44d {
+  color: #B79F77;
+}
+.GdFooter .wrap .lPartWrap .lPart .iconfont.data-v-17a9d44d {
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+}
+.GdFooter .wrap .lPartWrap .lPart .text.data-v-17a9d44d {
+  text-align: center;
+}
+.GdFooter .wrap .rPartWrap.data-v-17a9d44d {
+  width: 70%;
+  display: inline-block;
+}
+.GdFooter .wrap .rPartWrap .rPart.data-v-17a9d44d {
+  display: flex;
+  justify-content: space-around;
+}
+.GdFooter .wrap .rPartWrap .rPart button.data-v-17a9d44d {
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+.GdFooter .wrap .rPartWrap .rPart button.addCart.data-v-17a9d44d {
+  background-color: #B79F77;
+}
+.GdFooter .wrap .rPartWrap .rPart button.buy.data-v-17a9d44d {
+  background-color: #333333;
+}
+.GdFooter .safe.data-v-17a9d44d {
+  width: 100%;
+  height: 3rem;
+}
+.GdFooter .customerPhone.data-v-17a9d44d {
+  background: #FFFFFF;
+  text-align: center;
+  height: 10rem;
+  line-height: 10rem;
+  font-size: 1.6rem;
+}
+

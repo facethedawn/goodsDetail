@@ -1,0 +1,1 @@
+<view class="GdTitle data-v-0aecc7d4"><view class="title data-v-0aecc7d4"><text class="data-v-0aecc7d4">{{goodsDetail.goodsName}}</text><view class="data-v-0aecc7d4"><view class="iconfont icon-fenxiang1 _i data-v-0aecc7d4"></view></view></view><text class="subtitle data-v-0aecc7d4">{{goodsDetail.goodsProperty}}</text></view>
