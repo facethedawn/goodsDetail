@@ -84,6 +84,9 @@ try {
     },
     uniDataCheckbox: function() {
       return Promise.all(/*! import() | uni_modules/uni-data-checkbox/components/uni-data-checkbox/uni-data-checkbox */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-data-checkbox/components/uni-data-checkbox/uni-data-checkbox")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-data-checkbox/components/uni-data-checkbox/uni-data-checkbox.vue */ 113))
+    },
+    uniNumberBox: function() {
+      return __webpack_require__.e(/*! import() | uni_modules/uni-number-box/components/uni-number-box/uni-number-box */ "uni_modules/uni-number-box/components/uni-number-box/uni-number-box").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-number-box/components/uni-number-box/uni-number-box.vue */ 138))
     }
   }
 } catch (e) {
@@ -174,6 +177,18 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 var _logo = _interopRequireDefault(__webpack_require__(/*! ../../../static/logo.png */ 63));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
 //
 //
@@ -207,7 +222,19 @@ var _logo = _interopRequireDefault(__webpack_require__(/*! ../../../static/logo.
 //
 //
 //
-var _default = { name: "GdMarketingSize", data: function data() {return { logo: _logo.default, value: 0, range: [{ "value": 0, "text": "S" }, { "value": 1, "text": "M" }, { "value": 2, "text": "L" }, { "value": 3, "text": "XL" }] };}, mounted: function mounted() {this.$refs.popup.open('bottom');}, methods: { showPopup: function showPopup() {this.$refs.popup.open('bottom');} } };exports.default = _default;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = { name: "GdMarketingSize", data: function data() {return { logo: _logo.default, value: 0, range: [{ "value": 0, "text": "S" }, { "value": 1, "text": "M" }, { "value": 2, "text": "L" }, { "value": 3, "text": "XL" }, { "value": 0, "text": "S" }, { "value": 1, "text": "M" }, { "value": 2, "text": "L" }, { "value": 3, "text": "XL" }, { "value": 0, "text": "S" }, { "value": 1, "text": "M" }, { "value": 2, "text": "L" }, { "value": 3, "text": "XL" }], range1: [{ "value": 12, "text": "sdfsdf" }] };}, mounted: function mounted() {this.$refs.popup.open('bottom');}, methods: { showPopup: function showPopup() {this.$refs.popup.open('bottom');}, change: function change(e) {console.log(60, e);} } };exports.default = _default;
 
 /***/ }),
 

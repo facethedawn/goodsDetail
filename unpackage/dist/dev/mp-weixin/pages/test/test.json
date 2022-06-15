@@ -8,6 +8,7 @@
     "gd-intro": "/pages/test/components/GdIntro",
     "gd-footer": "/pages/test/components/GdFooter",
     "gd-comment": "/pages/test/components/GdComment",
-    "gd-marketing-size": "/pages/test/components/GdMarketingSize"
+    "gd-marketing-size": "/pages/test/components/GdMarketingSize",
+    "gd-marketing-promotion": "/pages/test/components/GdMarketingPromotion"
   }
 }

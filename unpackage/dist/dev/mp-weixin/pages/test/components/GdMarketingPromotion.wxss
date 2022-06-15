@@ -1,0 +1,17 @@
+.GdMarketingPromotion .wrap.data-v-4f9953cf {
+  border-top: 1px solid #EDEDED;
+  border-bottom: 1px solid #EDEDED;
+  height: 5.3rem;
+  line-height: 5.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.GdMarketingPromotion .wrap .title.data-v-4f9953cf {
+  font-size: 1.3rem;
+  color: #999999;
+}
+.GdMarketingPromotion .wrap .choose.data-v-4f9953cf {
+  color: #333333;
+  font-size: 1.3rem;
+}
+

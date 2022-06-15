@@ -42,9 +42,29 @@
 .GdMarketingSize .sizePopup .size.data-v-38087f85 {
   width: 100%;
   height: 20rem;
-  background-color: blue;
   padding: 0 2rem;
   box-sizing: border-box;
+}
+.GdMarketingSize .sizePopup .size .sizeItems.data-v-38087f85 {
+  margin-bottom: 2.8rem;
+}
+.GdMarketingSize .sizePopup .size .sizeItems .sizeItem.data-v-38087f85 {
+  display: flex;
+}
+.GdMarketingSize .sizePopup .size .sizeItems .sizeItem .sizeItemName.data-v-38087f85 {
+  font-size: 1.4rem;
+  margin-right: 2.3rem;
+  color: #333333;
+  width: 5.7rem;
+  padding-top: 0.7rem;
+}
+.GdMarketingSize .sizePopup .size .account.data-v-38087f85 {
+  display: flex;
+}
+.GdMarketingSize .sizePopup .size .account .accountName.data-v-38087f85 {
+  font-size: 1.4rem;
+  margin-right: 2.3rem;
+  color: #333333;
 }
 .GdMarketingSize .sizePopup .handle.data-v-38087f85 {
   position: absolute;

@@ -9,6 +9,7 @@
 				<GdTitle :goodsDetail = "goodsDetail"/>
         <GdPrice :goodsDetail = "goodsDetail"/>
         <GdMarketingSize/>
+        <GdMarketingPromotion/>
       </div>
       <GdComment/>
       <GdIntro :goodsDetail = "goodsDetail"/>
@@ -23,6 +24,7 @@ import GdSwiper from './components/GdSwiper.vue';
 import GdTitle from './components/GdTitle.vue';
 import GdPrice from './components/GdPrice.vue';
 import GdMarketingSize from './components/GdMarketingSize.vue';
+import GdMarketingPromotion from './components/GdMarketingPromotion.vue';
 import GdComment from './components/GdComment.vue';
 import GdIntro from './components/GdIntro.vue';
 import GdFooter from './components/GdFooter.vue';
@@ -56,7 +58,7 @@ export default {
       }
     });
   },
-  components: { GdSwiper, GdTitle, GdPrice, GdIntro, GdFooter, GdComment, GdMarketingSize }
+  components: { GdSwiper, GdTitle, GdPrice, GdIntro, GdFooter, GdComment, GdMarketingSize, GdMarketingPromotion }
 }
 </script>
 

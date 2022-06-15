@@ -1,0 +1,1 @@
+<view class="GdMarketingPromotion data-v-4f9953cf"><view data-event-opts="{{[['tap',[['showPopup',['$event']]]]]}}" class="wrap data-v-4f9953cf" bindtap="__e"><text class="title data-v-4f9953cf">规格数量</text><text class="choose data-v-4f9953cf">36, 123,123</text></view></view>

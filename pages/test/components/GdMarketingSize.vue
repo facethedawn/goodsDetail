@@ -14,12 +14,24 @@
           </view>
         </view>
         <view class="size">
-          <view class="sizeItem">
-            <view>
-              <text class="sizeItemName">尺寸</text>
+          <view class="sizeItems">
+            <view class="sizeItem">
+              <view class="sizeItemName">尺寸</view>
               <view class="sizeItemOption">
-                <uni-data-checkbox mode="tag" v-model="value" :localdata="range" @change="change"></uni-data-checkbox>
+                <uni-data-checkbox mode="tag" selectedColor="#B79F77" v-model="value" :localdata="range" @change="change"></uni-data-checkbox>
               </view>
+            </view>
+            <view class="sizeItem">
+              <view class="sizeItemName">尺寸</view>
+              <view class="sizeItemOption">
+                <uni-data-checkbox mode="tag" selectedColor="#B79F77" v-model="value" :localdata="range1" @change="change"></uni-data-checkbox>
+              </view>
+            </view>
+          </view>
+          <view class="account">
+            <view class="accountName">数量</view>
+            <view class="accountValue">
+              <uni-number-box></uni-number-box>
             </view>
           </view>
         </view>
@@ -40,7 +52,8 @@
       return {
         logo,
         value: 0,
-				range: [{"value": 0,"text": "S"	},{"value": 1,"text": "M"},{"value": 2,"text": "L"},{"value": 3,"text": "XL"}]
+				range: [{"value": 0,"text": "S"	},{"value": 1,"text": "M"},{"value": 2,"text": "L"},{"value": 3,"text": "XL"},{"value": 0,"text": "S"	},{"value": 1,"text": "M"},{"value": 2,"text": "L"},{"value": 3,"text": "XL"},{"value": 0,"text": "S"	},{"value": 1,"text": "M"},{"value": 2,"text": "L"},{"value": 3,"text": "XL"}],
+        range1: [{"value": 12,"text": "sdfsdf"	}]
       }
     },
     mounted() {
@@ -49,6 +62,9 @@
     methods: {
       showPopup() {
         this.$refs.popup.open('bottom');
+      },
+      change(e) {
+        console.log(60, e);
       }
     },
   }
@@ -98,9 +114,30 @@
       .size {
         width: 100%;
         height: 20rem;
-        background-color: blue;
+        // background-color: blue;
         padding: 0 2rem;
         box-sizing: border-box;
+        .sizeItems {
+          margin-bottom: 2.8rem;
+          .sizeItem {
+            display: flex;
+            .sizeItemName {
+              font-size: 1.4rem;
+              margin-right: 2.3rem;
+              color: #333333;
+              width: 5.7rem;
+              padding-top: 0.7rem;
+            }
+          }
+        }
+        .account {
+          display: flex;
+          .accountName {
+            font-size: 1.4rem;
+            margin-right: 2.3rem;
+            color: #333333;
+          }
+        }
       }
       .handle {
         position: absolute;
