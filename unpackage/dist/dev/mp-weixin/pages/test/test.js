@@ -102,29 +102,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components
-try {
-  components = {
-    uniCard: function() {
-      return __webpack_require__.e(/*! import() | uni_modules/uni-card/components/uni-card/uni-card */ "uni_modules/uni-card/components/uni-card/uni-card").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-card/components/uni-card/uni-card.vue */ 30))
-    }
-  }
-} catch (e) {
-  if (
-    e.message.indexOf("Cannot find module") !== -1 &&
-    e.message.indexOf(".vue") !== -1
-  ) {
-    console.error(e.message)
-    console.error("1. 排查组件名称拼写是否正确")
-    console.error(
-      "2. 排查组件是否符合 easycom 规范，文档：https://uniapp.dcloud.net.cn/collocation/pages?id=easycom"
-    )
-    console.error(
-      "3. 若组件不符合 easycom 规范，需手动引入，并在 components 中注册该组件"
-    )
-  } else {
-    throw e
-  }
-}
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -190,8 +167,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-__webpack_require__(/*! ../../common/style/iconfont.css */ 19);var GdSwiper = function GdSwiper() {__webpack_require__.e(/*! require.ensure | pages/test/components/GdSwiper */ "pages/test/components/GdSwiper").then((function () {return resolve(__webpack_require__(/*! ./components/GdSwiper.vue */ 37));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var GdTitle = function GdTitle() {__webpack_require__.e(/*! require.ensure | pages/test/components/GdTitle */ "pages/test/components/GdTitle").then((function () {return resolve(__webpack_require__(/*! ./components/GdTitle.vue */ 44));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var GdPrice = function GdPrice() {__webpack_require__.e(/*! require.ensure | pages/test/components/GdPrice */ "pages/test/components/GdPrice").then((function () {return resolve(__webpack_require__(/*! ./components/GdPrice.vue */ 51));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var GdMarketingSize = function GdMarketingSize() {Promise.all(/*! require.ensure | pages/test/components/GdMarketingSize */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/test/components/GdMarketingSize")]).then((function () {return resolve(__webpack_require__(/*! ./components/GdMarketingSize.vue */ 58));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var GdMarketingPromotion = function GdMarketingPromotion() {__webpack_require__.e(/*! require.ensure | pages/test/components/GdMarketingPromotion */ "pages/test/components/GdMarketingPromotion").then((function () {return resolve(__webpack_require__(/*! ./components/GdMarketingPromotion.vue */ 146));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var GdComment = function GdComment() {Promise.all(/*! require.ensure | pages/test/components/GdComment */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/test/components/GdComment")]).then((function () {return resolve(__webpack_require__(/*! ./components/GdComment.vue */ 66));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var GdIntro = function GdIntro() {__webpack_require__.e(/*! require.ensure | pages/test/components/GdIntro */ "pages/test/components/GdIntro").then((function () {return resolve(__webpack_require__(/*! ./components/GdIntro.vue */ 73));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var GdFooter = function GdFooter() {Promise.all(/*! require.ensure | pages/test/components/GdFooter */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/test/components/GdFooter")]).then((function () {return resolve(__webpack_require__(/*! ./components/GdFooter.vue */ 80));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+__webpack_require__(/*! ../../common/style/iconfont.css */ 19);var GdSwiper = function GdSwiper() {__webpack_require__.e(/*! require.ensure | pages/test/components/GdSwiper */ "pages/test/components/GdSwiper").then((function () {return resolve(__webpack_require__(/*! ./components/GdSwiper.vue */ 37));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var GdTitle = function GdTitle() {__webpack_require__.e(/*! require.ensure | pages/test/components/GdTitle */ "pages/test/components/GdTitle").then((function () {return resolve(__webpack_require__(/*! ./components/GdTitle.vue */ 44));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var GdPrice = function GdPrice() {__webpack_require__.e(/*! require.ensure | pages/test/components/GdPrice */ "pages/test/components/GdPrice").then((function () {return resolve(__webpack_require__(/*! ./components/GdPrice.vue */ 51));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var GdMarketingSize = function GdMarketingSize() {Promise.all(/*! require.ensure | pages/test/components/GdMarketingSize */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/test/components/GdMarketingSize")]).then((function () {return resolve(__webpack_require__(/*! ./components/GdMarketingSize.vue */ 58));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var GdMarketingPromotion = function GdMarketingPromotion() {__webpack_require__.e(/*! require.ensure | pages/test/components/GdMarketingPromotion */ "pages/test/components/GdMarketingPromotion").then((function () {return resolve(__webpack_require__(/*! ./components/GdMarketingPromotion.vue */ 146));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var GdMarketingCoupon = function GdMarketingCoupon() {__webpack_require__.e(/*! require.ensure | pages/test/components/GdMarketingCoupon */ "pages/test/components/GdMarketingCoupon").then((function () {return resolve(__webpack_require__(/*! ./components/GdMarketingCoupon.vue */ 30));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var GdComment = function GdComment() {Promise.all(/*! require.ensure | pages/test/components/GdComment */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/test/components/GdComment")]).then((function () {return resolve(__webpack_require__(/*! ./components/GdComment.vue */ 66));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var GdIntro = function GdIntro() {__webpack_require__.e(/*! require.ensure | pages/test/components/GdIntro */ "pages/test/components/GdIntro").then((function () {return resolve(__webpack_require__(/*! ./components/GdIntro.vue */ 73));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var GdFooter = function GdFooter() {Promise.all(/*! require.ensure | pages/test/components/GdFooter */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/test/components/GdFooter")]).then((function () {return resolve(__webpack_require__(/*! ./components/GdFooter.vue */ 80));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 {
@@ -220,7 +196,16 @@ __webpack_require__(/*! ../../common/style/iconfont.css */ 19);var GdSwiper = fu
       } });
 
   },
-  components: { GdSwiper: GdSwiper, GdTitle: GdTitle, GdPrice: GdPrice, GdIntro: GdIntro, GdFooter: GdFooter, GdComment: GdComment, GdMarketingSize: GdMarketingSize, GdMarketingPromotion: GdMarketingPromotion } };exports.default = _default;
+  components: {
+    GdSwiper: GdSwiper,
+    GdTitle: GdTitle,
+    GdPrice: GdPrice,
+    GdIntro: GdIntro,
+    GdFooter: GdFooter,
+    GdComment: GdComment,
+    GdMarketingSize: GdMarketingSize,
+    GdMarketingPromotion: GdMarketingPromotion,
+    GdMarketingCoupon: GdMarketingCoupon } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

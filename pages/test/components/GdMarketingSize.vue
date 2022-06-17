@@ -56,9 +56,6 @@
         range1: [{"value": 12,"text": "sdfsdf"	}]
       }
     },
-    mounted() {
-      this.$refs.popup.open('bottom');
-    },
     methods: {
       showPopup() {
         this.$refs.popup.open('bottom');

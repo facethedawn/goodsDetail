@@ -1,15 +1,13 @@
 <template>
 	<page-meta root-font-size="62.5%">
 		<view class="goodsDetail">
-      <uni-card>
-        <text>这是一个基础卡片示例，内容较少，此示例展示了一个没有任何属性不带阴影的卡片。</text>
-      </uni-card>
       <GdSwiper :goodsDetail = "goodsDetail"/>
       <div class="wrap">
 				<GdTitle :goodsDetail = "goodsDetail"/>
         <GdPrice :goodsDetail = "goodsDetail"/>
         <GdMarketingSize/>
         <GdMarketingPromotion/>
+        <GdMarketingCoupon/>
       </div>
       <GdComment/>
       <GdIntro :goodsDetail = "goodsDetail"/>
@@ -25,6 +23,7 @@ import GdTitle from './components/GdTitle.vue';
 import GdPrice from './components/GdPrice.vue';
 import GdMarketingSize from './components/GdMarketingSize.vue';
 import GdMarketingPromotion from './components/GdMarketingPromotion.vue';
+import GdMarketingCoupon from './components/GdMarketingCoupon.vue';
 import GdComment from './components/GdComment.vue';
 import GdIntro from './components/GdIntro.vue';
 import GdFooter from './components/GdFooter.vue';
@@ -58,7 +57,17 @@ export default {
       }
     });
   },
-  components: { GdSwiper, GdTitle, GdPrice, GdIntro, GdFooter, GdComment, GdMarketingSize, GdMarketingPromotion }
+  components: { 
+    GdSwiper, 
+    GdTitle, 
+    GdPrice, 
+    GdIntro, 
+    GdFooter, 
+    GdComment, 
+    GdMarketingSize, 
+    GdMarketingPromotion, 
+    GdMarketingCoupon 
+  }
 }
 </script>
 

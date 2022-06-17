@@ -1,7 +1,6 @@
 {
   "navigationBarTitleText": "商品详情",
   "usingComponents": {
-    "uni-card": "/uni_modules/uni-card/components/uni-card/uni-card",
     "gd-swiper": "/pages/test/components/GdSwiper",
     "gd-title": "/pages/test/components/GdTitle",
     "gd-price": "/pages/test/components/GdPrice",
@@ -9,6 +8,7 @@
     "gd-footer": "/pages/test/components/GdFooter",
     "gd-comment": "/pages/test/components/GdComment",
     "gd-marketing-size": "/pages/test/components/GdMarketingSize",
-    "gd-marketing-promotion": "/pages/test/components/GdMarketingPromotion"
+    "gd-marketing-promotion": "/pages/test/components/GdMarketingPromotion",
+    "gd-marketing-coupon": "/pages/test/components/GdMarketingCoupon"
   }
 }

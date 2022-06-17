@@ -234,7 +234,7 @@ var _logo = _interopRequireDefault(__webpack_require__(/*! ../../../static/logo.
 //
 //
 //
-var _default = { name: "GdMarketingSize", data: function data() {return { logo: _logo.default, value: 0, range: [{ "value": 0, "text": "S" }, { "value": 1, "text": "M" }, { "value": 2, "text": "L" }, { "value": 3, "text": "XL" }, { "value": 0, "text": "S" }, { "value": 1, "text": "M" }, { "value": 2, "text": "L" }, { "value": 3, "text": "XL" }, { "value": 0, "text": "S" }, { "value": 1, "text": "M" }, { "value": 2, "text": "L" }, { "value": 3, "text": "XL" }], range1: [{ "value": 12, "text": "sdfsdf" }] };}, mounted: function mounted() {this.$refs.popup.open('bottom');}, methods: { showPopup: function showPopup() {this.$refs.popup.open('bottom');}, change: function change(e) {console.log(60, e);} } };exports.default = _default;
+var _default = { name: "GdMarketingSize", data: function data() {return { logo: _logo.default, value: 0, range: [{ "value": 0, "text": "S" }, { "value": 1, "text": "M" }, { "value": 2, "text": "L" }, { "value": 3, "text": "XL" }, { "value": 0, "text": "S" }, { "value": 1, "text": "M" }, { "value": 2, "text": "L" }, { "value": 3, "text": "XL" }, { "value": 0, "text": "S" }, { "value": 1, "text": "M" }, { "value": 2, "text": "L" }, { "value": 3, "text": "XL" }], range1: [{ "value": 12, "text": "sdfsdf" }] };}, methods: { showPopup: function showPopup() {this.$refs.popup.open('bottom');}, change: function change(e) {console.log(60, e);} } };exports.default = _default;
 
 /***/ }),
 
