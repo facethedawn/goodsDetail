@@ -49,10 +49,10 @@ export default {
           "saas-Agent": "qj-wemini"
       },
       data: {
-          skuCode: "583978025764720650"
+        skuCode: "583978025764720650"
+        // skuCode: "574562232464371786"
       },
       success: function (res) {
-          console.log(25, res?.data);
           that.goodsDetail = res?.data;
       }
     });

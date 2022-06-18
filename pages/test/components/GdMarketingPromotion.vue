@@ -2,7 +2,7 @@
   <view class="GdMarketingPromotion">
     <view class="wrap" @click="showPopup">
       <text class="title">促销</text>
-      <text class="choose">36, 123,123</text>
+      <text class="iconfont icon-xiangyou" />
     </view>
     <uni-popup ref="popup" type="bottom">
       <view class="promotionPopup">
