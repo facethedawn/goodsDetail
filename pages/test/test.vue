@@ -5,7 +5,7 @@
       <div class="wrap">
 				<GdTitle :goodsDetail = "goodsDetail"/>
         <GdPrice :goodsDetail = "goodsDetail"/>
-        <GdMarketingSize/>
+        <GdMarketingSize :goodsDetail = "goodsDetail"/>
         <GdMarketingPromotion/>
         <GdMarketingCoupon/>
       </div>
@@ -28,14 +28,16 @@ import GdComment from './components/GdComment.vue';
 import GdIntro from './components/GdIntro.vue';
 import GdFooter from './components/GdFooter.vue';
 
+import getGoodsDetail from "../../http/api/getGoodsDetail";
+
 import "../../common/style/iconfont.css";
 
 
 export default {
   data() {
     return {
-      url: "https://b2cweapp-dev2021112700000085.qjclouds.com/web/rs/resourceGoods/getResourceGoodsInfoBySkuCode.json",
-      code: "583978025764720650",
+      // skuCode: "583978025764720650",
+      skuCode: "583978025655668786",
       goodsDetail: {},
       needSafe: false,
     };
@@ -43,20 +45,13 @@ export default {
   mounted() {
     const that = this;
     that.needSafe = getApp().globalData.needSafe
-    uni.request({
-      url: "https://b2cweapp-dev2021112700000085.qjclouds.com/web/rs/resourceGoods/getResourceGoodsInfoBySkuCode.json",
-      header: {
-          "saas-Agent": "qj-wemini"
-      },
-      data: {
-        skuCode: "583978025764720650"
-        // skuCode: "574562232464371786"
-      },
-      success: function (res) {
-          that.goodsDetail = res?.data;
-          console.log("商品详情", res?.data);
-      }
-    });
+    getGoodsDetail({
+      // skuCode: "583978025768914958",
+      skuCode: "583978025764720650"
+    }).then(res => {
+      that.goodsDetail = res;
+      console.log("商品详情", res);
+    })
   },
   components: { 
     GdSwiper, 

@@ -55,14 +55,16 @@
   font-size: 1.4rem;
   margin-right: 2.3rem;
   color: #333333;
-  width: 5.7rem;
+  width: 3.5rem;
   padding-top: 0.7rem;
+  flex-shrink: 0;
 }
 .GdMarketingSize .sizePopup .size .account.data-v-38087f85 {
   display: flex;
 }
 .GdMarketingSize .sizePopup .size .account .accountName.data-v-38087f85 {
   font-size: 1.4rem;
+  width: 3.5rem;
   margin-right: 2.3rem;
   color: #333333;
 }

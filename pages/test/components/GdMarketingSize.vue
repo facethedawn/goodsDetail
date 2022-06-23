@@ -7,10 +7,10 @@
     <uni-popup ref="popup" type="bottom">
       <view class="sizePopup">
         <view class="base">
-          <image :src="logo" class="productImg"/>
+          <image :src="sizeOriginArr[value].dataPic" class="productImg"/>
           <view>
-            <text class="productPrice">188888</text>
-            <view>已选：36, 123,123</view>
+            <text class="productPrice">{{sizeOriginArr[value].pricesetNprice}}</text>
+            <view>已选：{{sizeArr[value].text}}</view>
           </view>
         </view>
         <view class="size">
@@ -18,13 +18,7 @@
             <view class="sizeItem">
               <view class="sizeItemName">尺寸</view>
               <view class="sizeItemOption">
-                <uni-data-checkbox mode="tag" selectedColor="#B79F77" v-model="value" :localdata="range" @change="change"></uni-data-checkbox>
-              </view>
-            </view>
-            <view class="sizeItem">
-              <view class="sizeItemName">尺寸</view>
-              <view class="sizeItemOption">
-                <uni-data-checkbox mode="tag" selectedColor="#B79F77" v-model="value" :localdata="range1" @change="change"></uni-data-checkbox>
+                <uni-data-checkbox mode="tag" selectedColor="#B79F77" v-model="value" :localdata="sizeArr" @change="change"></uni-data-checkbox>
               </view>
             </view>
           </view>
@@ -48,12 +42,32 @@
 
   export default {
     name: "GdMarketingSize",
+    props: ['goodsDetail'],
     data() {
       return {
         logo,
         value: 0,
-				range: [{"value": 0,"text": "S"	},{"value": 1,"text": "M"},{"value": 2,"text": "L"},{"value": 3,"text": "XL"},{"value": 0,"text": "S"	},{"value": 1,"text": "M"},{"value": 2,"text": "L"},{"value": 3,"text": "XL"},{"value": 0,"text": "S"	},{"value": 1,"text": "M"},{"value": 2,"text": "L"},{"value": 3,"text": "XL"}],
-        range1: [{"value": 12,"text": "sdfsdf"	}]
+        choosenArr: [],
+        sizeArr: [],
+        sizeOriginArr: []
+      }
+    },
+    mounted() {
+      // console.log(62, this.goodsDetail)
+    },
+    watch: {
+      goodsDetail: function(val) {
+        const aim = val?.rsSkuDomainList;
+        const result = [];
+        for (const [index, item] of aim?.entries()) {
+          result[index] = {
+            "value": index,
+            "text": item.skuName
+          }
+        }
+        this.sizeArr = result;
+        this.sizeOriginArr = aim;
+        console.log(this.sizeOriginArr)
       }
     },
     methods: {
@@ -122,8 +136,9 @@
               font-size: 1.4rem;
               margin-right: 2.3rem;
               color: #333333;
-              width: 5.7rem;
+              width: 3.5rem;
               padding-top: 0.7rem;
+              flex-shrink: 0;
             }
           }
         }
@@ -131,6 +146,7 @@
           display: flex;
           .accountName {
             font-size: 1.4rem;
+            width: 3.5rem;
             margin-right: 2.3rem;
             color: #333333;
           }

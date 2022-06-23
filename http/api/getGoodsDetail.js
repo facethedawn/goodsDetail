@@ -4,7 +4,7 @@ const getResourceGoodsInfoBySkuCode = "/web/rs/resourceGoods/getResourceGoodsInf
 
 const getGoodsDetail = (data) => {
   return xhrFactory({
-    url: domain+getResourceGoodsInfoBySkuCode,
+    url: domain + getResourceGoodsInfoBySkuCode,
     data,
   })
 }
