@@ -9,7 +9,7 @@
         <GdMarketingPromotion/>
         <GdMarketingCoupon/>
       </div>
-      <GdComment/>
+      <GdComment :goodsDetail = "goodsDetail"/>
       <GdIntro :goodsDetail = "goodsDetail"/>
       <view class="safe" v-if="needSafe"></view>
       <GdFooter/>
@@ -54,6 +54,7 @@ export default {
       },
       success: function (res) {
           that.goodsDetail = res?.data;
+          console.log("商品详情", res?.data);
       }
     });
   },

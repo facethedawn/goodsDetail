@@ -17,7 +17,6 @@
       let that = this
       wx.getSystemInfo({
   			success (res) {
-          console.log(22, res);
 					that.mobile = res.model
 				}}
 			)

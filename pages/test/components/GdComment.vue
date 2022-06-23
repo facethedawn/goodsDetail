@@ -1,7 +1,7 @@
 <template>
   <view class="GdComment">
     <view class="title">
-      <text class="num">全部评价 (24)</text>
+      <text class="num">全部评价 ({{commentData.total}})</text>
       <view class="all">
         <text class="txt">查看全部</text>
         <text class="iconfont icon-xiangyou"/>
@@ -9,21 +9,44 @@
     </view>
     <view class="info">
       <view class="people">
-        <image :src="logo" class="avatar"/>
-        <text class="username">sdfdsfdsfdsf</text>
+        <image :src="commentData.list[0].userImgurl" class="avatar"/>
+        <text class="username">{{commentData.list[0].memberBname}}</text>
       </view>
+      <view>{{commentData.list[0].evaluateGoodsContent}}</view>
     </view>
   </view>
 </template>
 <script>
 import logo from "../../../static/logo.png"
+import getCommentList from "../../../http/api/getCommentList"
 export default {
   name: "GdComment",
   data() {
     return {
-      logo
+      logo,
+      page:1,
+      rows: 10,
+      commentData: {}
     }
   },
+  props: {
+    goodsDetail: Object
+  },
+  mounted() {
+    
+  },
+  watch: {
+    goodsDetail: function(data) {
+      getCommentList({
+        page: this.page,
+        rows: this.rows,
+        goodsCode: data.goodsCode
+      }).then(res => {
+        console.log(60, res);
+        this.commentData = res
+      })
+    }
+  }
 }
 </script>
 <style lang="less" scoped>
@@ -58,6 +81,7 @@ export default {
           height: 2.4rem;
           border-radius: 50%;
           margin-right: 1rem;
+          border: 1px solid #ccc;
         }
         .username {
           vertical-align: top;
